@@ -1,0 +1,16 @@
+/* Colors */
+$coolgray: #555559;
+$darkgreen: #36715a;
+$brightgreen: #56a83f;
+$offwhite: #eeeff0;
+
+$padding: 1em;
+$margin: 1em;
+
+.upper {
+  background: $darkgreen;
+  padding: $padding / 4;
+  color: $offwhite;
+  @extend .small;
+  box-shadow: inset 0 0 10px rgba(black,.25);
+}

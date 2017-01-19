@@ -1,0 +1,136 @@
+.container {
+	display:block;
+	margin:auto;
+	max-width:1140px;
+	width:95%;
+	*zoom:1;
+}
+
+.container:before,.container:after {
+	display:table;
+	content:" ";
+}
+
+.container:after {
+	clear:both;
+}
+
+.row {
+	padding:2em 0;
+	border-bottom:1px dotted rgba(0,0,0,0.2);
+	*zoom:1;
+}
+
+.row:before,.row:after {
+	display:table;
+	content:" ";
+}
+
+.row:after {
+	clear:both;
+}
+
+.row.first {
+	padding-top:0;
+}
+
+.onesixth,
+.onefourth,
+.onethird,
+.onehalf,
+.twothirds,
+.threefourths {
+	margin-bottom:2em;
+}
+
+.onesixth,
+.onefourth {
+	float:left;
+	margin-right: 5%;
+	width:47.5%;
+}
+
+.onesixth:nth-of-type(2),
+.onesixth:nth-of-type(4),
+.onefourth:nth-of-type(2),
+.last {
+	margin-right: 0;
+}
+
+@media only screen and (min-width: 37.5em) {
+	
+	.container,.wrap {
+		width:95%;
+	}
+	
+	/*** GRID ***/
+	.onesixth,
+	.onethird,
+	.twothirds,
+	.onefourth,
+	.threefourths,
+	.onehalf {
+		float:left;
+		margin:0 5% 0 0;
+	}
+	
+	.opposite {
+		float:right;
+	}
+	
+	.onesixth {
+		width: 12.5%;
+	}
+	
+	.onefourth {
+		width:21.25%;
+	}
+	
+	.onesixth:nth-of-type(2),
+	.onesixth:nth-of-type(4),
+	.onefourth:nth-of-type(2) {
+		margin-right:5%;
+	}
+	
+	.onethird {
+		width:30%;
+	}
+	
+	.twothirds {
+		width:65%;
+	}
+	
+	.threefourths {
+		width:73.75%;
+	}
+	
+	.onehalf {
+		width:47.5%;
+	}
+	
+	/* push columns to the center */
+	
+	.skipsixth {
+		margin-left: 17.5%;
+	}
+	
+	.skipthird {
+		margin-left:35%;
+	}
+	
+	.skipfourth {
+		margin-left:26.25%;
+	}
+	
+	/* Get rid of last column's extra margin */
+	
+	.last {
+		margin-right:0 !important;
+	}
+}
+
+@media only screen and (min-width: 56em) {
+
+	
+
+}

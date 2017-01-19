@@ -1,0 +1,1 @@
+(function(e){e("p > img, p > iframe").unwrap();e("tr:odd").addClass("even");e("#tabs").tabs({fx:{opacity:"toggle"}});e("#accordion").accordion({collapsible:!0,autoHeight:!1,active:!1})})(jQuery);
